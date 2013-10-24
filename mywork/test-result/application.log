@@ -1,0 +1,60 @@
+17 十月 2013 00:27:11,017 INFO  ~ Starting D:\javaworksp\play-1.2.3\mywork
+17 十月 2013 00:27:11,017 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.crud)
+17 十月 2013 00:27:11,017 INFO  ~ Module crud is available (D:\javaworksp\play-1.2.3\modules\crud)
+17 十月 2013 00:27:11,689 WARN  ~ You're running Play! in DEV mode
+17 十月 2013 00:27:11,845 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+17 十月 2013 00:27:15,611 ERROR ~ 
+
+@6g1dd9ifc
+Internal Server Error (500) for request GET /
+
+Template execution error (In {module:crud}/app/views/tags/crud/types.tag around line 3)
+Execution error occured in template {module:crud}/app/views/tags/crud/types.tag. Exception raised was NullPointerException : null.
+
+play.exceptions.TemplateExecutionException
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:84)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:252)
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:374)
+	at {module:crud}/conf/routes.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:229)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:184)
+	at play.mvc.Router.parse(Router.java:162)
+	at play.mvc.Router.parse(Router.java:190)
+	at play.mvc.Router.parse(Router.java:164)
+	at play.mvc.Router.load(Router.java:50)
+	at play.mvc.Router.detectChanges(Router.java:219)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:262)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:474)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:412)
+	at play.classloading.ApplicationClassloader.getAssignableClasses(ApplicationClassloader.java:441)
+	at {module:crud}/app/views/tags/crud/types.tag.(line:3)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:229)
+	... 11 more
+17 十月 2013 00:28:01,705 ERROR ~ 
+
+@6g1dd9ifd
+Internal Server Error (500) for request GET /
+
+Oops: NullPointerException
+An unexpected error occured caused by exception NullPointerException: null
+
+play.exceptions.UnexpectedException: Unexpected Error
+	at play.Play.start(Play.java:525)
+	at play.Play.detectChanges(Play.java:610)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:262)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:474)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:278)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:249)
+	at play.classloading.ApplicationClassloader.loadApplicationClass(ApplicationClassloader.java:156)
+	at play.classloading.ApplicationClassloader.getAllClasses(ApplicationClassloader.java:417)
+	at play.Play.start(Play.java:485)
+	... 3 more
+17 十月 2013 00:28:08,127 INFO  ~ Connected to jdbc:mysql://localhost/zengchq?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+17 十月 2013 00:28:10,080 INFO  ~ Application 'mywork' is now started !

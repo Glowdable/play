@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.985" errors="0" skipped="0" tests="5" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="testThatIndexPageWorks" time="0.157">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testOutBoundVouchGet" time="0.234">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testOutBoundVouchPost" time="0.219">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testOutBoundVouchPut" time="0.187">
+      </testcase>
+  <testcase classname="ApplicationTest" name="testOutBoundVouchDelete" time="0.188">
+      </testcase>
+</testsuite>
